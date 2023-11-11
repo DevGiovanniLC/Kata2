@@ -9,5 +9,8 @@ public class Main {
         for (Organization organization : load){
             System.out.println(organization);
         }
+
+        CountryOrganizationProcessor countryOrganizationProcessor = new CountryOrganizationProcessor(load);
+        System.out.println("\n\n"+countryOrganizationProcessor.process());
     }
 }
